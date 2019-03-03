@@ -15,5 +15,12 @@ oHex = Polygon(Point(180, 240), Point(205, 290), Point(265, 290),
 oHex.setFill(color_rgb(255, 128, 0))
 oHex.draw(sWin)
 
+#Third Object (Septagon)
+ySep = Polygon(Point(190, 10), Point(150, 60), Point(165, 120), 
+               Point(220, 150), Point(275, 120), Point(290, 60),
+               Point(250, 10))
+ySep.setFill(color_rgb(255, 255, 0))
+ySep.draw(sWin)
+
 sWin.getMouse()
 sWin.close()
