@@ -1,7 +1,12 @@
 from graphics import *
 
-sWin = GraphWin("5 Shapes", 300, 300)
-sWin.setCoords(0, 0, 300, 300)
+winX = 300
+winY = 300
+bDs1 = winX/12
+bDs2 = winX/6
+
+sWin = GraphWin("5 Shapes", winX, winX)
+sWin.setCoords(0, 0, winX, winX)
 
 #First Object (Red Pentagon)
 rPen = Polygon(Point(25, 210), Point(10, 260), Point(50, 290),
@@ -30,8 +35,10 @@ gOct.setFill(color_rgb(50, 205, 50))
 gOct.draw(sWin)
 
 #Fifth Object (Blue Diamond)
-bDia = Polygon(Point(125, 150), Point(150, 200),
-               Point(175, 150), Point(150, 100))
+bDia = Polygon(Point((winX/2)-bDs1, (winY/2)),
+               Point((winX/2), (winY/2)+bDs2),
+               Point((winX/2)+bDs1, (winY/2)),
+               Point((winX/2), (winY/2)-bDs2))
 bDia.setFill(color_rgb(0, 0, 255))
 bDia.draw(sWin)
 
