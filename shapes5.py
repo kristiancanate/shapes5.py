@@ -26,8 +26,14 @@ ySep.draw(sWin)
 gOct = Polygon(Point(30, 10), Point(10, 30), Point(10, 50), 
                Point(30, 70), Point(50, 70), Point(70, 50),
                Point(70, 30), Point(50, 10))
-gOct.setFill(color_rgb(51, 204, 51))
+gOct.setFill(color_rgb(50, 205, 50))
 gOct.draw(sWin)
+
+#Fifth Object (Blue Diamond)
+bDia = Polygon(Point(125, 150), Point(150, 200),
+               Point(175, 150), Point(150, 100))
+bDia.setFill(color_rgb(0, 0, 255))
+bDia.draw(sWin)
 
 sWin.getMouse()
 sWin.close()
